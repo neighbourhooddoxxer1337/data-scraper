@@ -1,7 +1,7 @@
 import requests
 
-EMAIL = "awang.dani1609@gmail.com"
-PASSWORD = "iaminvincible!!!!!!"
+EMAIL = os.getenv("SCRAPER_EMAIL")
+PASSWORD = os.getenv("SCRAPER_PASS")
 
 LOGIN_URL = "https://data.bn-marketplace.net/login"
 SCRAPE_URL = "https://data.bn-marketplace.net/api/vendor-data"
